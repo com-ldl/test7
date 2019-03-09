@@ -24,6 +24,7 @@ public class UserController {
     public String getUser(){
         System.out.println("启动成功");
         List user = ser.getUser();
+        user.add("一个测试");
         return user.toString();
     }
 }
